@@ -5,7 +5,7 @@ import axios from "axios";
 const Payment = () => {
   const handlePayment = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/pay");
+      const response = await axios.get("https://tst-7e6r.onrender.com/pay");
       console.log("Payment response:", response.data);
       // Add logic to handle the payment response as needed
     } catch (error) {
