@@ -19,7 +19,7 @@ app.set("view engine", "ejs");
 
 // Middleware
 const corsOptions = {
-  origin: "https://frt-37kt.onrender.com",
+  origin: "*",
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true,
   optionsSuccessStatus: 204
