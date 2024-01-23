@@ -5,7 +5,7 @@ import axios from "axios";
 const Refund = () => {
   const handleRefund = async () => {
     try {
-      const response = await axios.get("https://tst-7e6r.onrender.com/refund");
+      const response = await axios.get("/refund");
       console.log("Refund response:", response.data);
       // Add logic to handle the refund response as needed
     } catch (error) {
