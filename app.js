@@ -18,7 +18,12 @@ app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
 // Middleware
-app.use(cors());
+const corsOptions = {
+  origin: "https://frt-37kt.onrender.com",
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  credentials: true,
+  optionsSuccessStatus: 204
+};
 app.use(logger("dev"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
